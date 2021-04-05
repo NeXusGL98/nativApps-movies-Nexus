@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "e6e79c3a-23f0-48da-a88d-d01e09352629",
+		"name": "Movies backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OMDB Reference api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=5eec5adc&s=Love&y=2020",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt3896198",
+							"disabled": true
+						},
+						{
+							"key": "apikey",
+							"value": "5eec5adc"
+						},
+						{
+							"key": "s",
+							"value": "Love"
+						},
+						{
+							"key": "y",
+							"value": "2020"
+						}
+					]
+				},
+				"description": "This is the provided movie api for test"
+			},
+			"response": []
+		},
+		{
+			"name": "Find all Movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
